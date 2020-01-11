@@ -1,13 +1,15 @@
 import React from 'react'
-import HeaderNav from '../header_nav/header_nav'
+import MainHeader from '../header_nav/main_header'
+import UtilNavContainer from '../header_nav/util_nav_container'
 
 class Homepage extends React.Component{
 
     render(){
         return(
-            <div className="homepage-global">
+            <div className="homepage">
                 <header className="global-header">
-                    <HeaderNav />
+                    <MainHeader />
+                    <UtilNavContainer />
                 </header>
                 
             </div>

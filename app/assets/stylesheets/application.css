@@ -172,3 +172,66 @@ a:hover, a:focus {
 .global-header .sub-nav .sub-nav-box:hover h4, .global-header .sub-nav .sub-nav-box:hover p {
     color: #fff;
 }
+
+.sub-nav-box{
+  text-decoration: none;
+}
+
+.nonlinked{
+  cursor: pointer;
+}
+
+.global-header .utility-nav, .global-header .business-nav {
+    display: inline-block;
+    margin-left: auto;
+}
+
+}
+.global-header .utility-nav li, .global-header .business-nav li {
+    font-family: "Soleil",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    vertical-align: middle;
+}
+
+}
+.global-header .utility-nav li a:link, .global-header .utility-nav li a:visited, .global-header .business-nav li a:link, .global-header .business-nav li a:visited {
+    color: #00a82d;
+}
+
+.global-header .utility-nav a, .global-header .business-nav a {
+    padding-bottom: 2px;
+}
+
+.global-header .button-outline, .global-header a:link.button-outline, .global-header a:visited.button-outline {
+    font-family: "Soleil_Bold",Helvetica,Arial,sans-serif;
+    display: inline-block;
+    height: 40px;
+    min-width: 120px;
+    font-size: 14px;
+    line-height: 37px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .5px;
+    color: #00a82d;
+    border-radius: 3px;
+    border: 2px solid #00a82d;
+    padding: 0 10px;
+    transition: .3s border ease-in-out, .3s color ease-in-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+.global-header a:link, .global-header a:visited {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .1s color ease-in-out;
+}
+
+}
+.top .global-header {
+    background: #fff;
+    z-index: 997;
+}

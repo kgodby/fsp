@@ -587,7 +587,7 @@ body{
     text-align: right;
 }
 
-}
+
 .Row.horizontalRow .horizontalText:before, .Row.horizontalRow .horizontalText:after {
     width: 50%;
     top: 51%;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class MinimalLoginForm extends React.Component {
+class MinimalRegistrationForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -41,10 +41,10 @@ class MinimalLoginForm extends React.Component {
 
 
         return (
-        <div className="signin">
-            
-                    <form onSubmit={this.handleSubmit}  autoComplete="on" name="Login_form" id="login_form"className="minimal-form">
-                        
+            <div className="signin">
+
+                <form onSubmit={this.handleSubmit} autoComplete="on" name="Login_form" id="login_form" className="minimal-form">
+
                     <ol>
                         <li className="Row">
                             <div id="demo-signup" className="demo-button">
@@ -74,7 +74,7 @@ class MinimalLoginForm extends React.Component {
 
                             </div>
                         </li>
-                        <li className="Row CanBePulledDown PulledIntoViewWithoutDelay" id="passwordRow" tableindex="-1">
+                        <li className="Row" id="passwordRow" tableindex="-1">
                             <div id="password-wrapper">
                                 <input type="password"
                                     value={this.state.password}
@@ -83,36 +83,38 @@ class MinimalLoginForm extends React.Component {
                                 />
                             </div>
                         </li>
-                        <li className="Row CanBePulledDown" id="responseMessageRow" tableindex="-1">
-                            <div id="responseMessage" className="PullableText"></div>
+                        
+                        <li>
+                            <input name="register" id="register" className="Btn Btn_emph Btn_super Btn_create_account" type="submit" value="Continue" />
                         </li>
-                        <li className="Row CanBePulledDown PulledIntoView" id="submitRow" tableindex="-1">
-                            <input type="hidden" name="login" id="eventToTrigger"/>
-                            <input id ="loginButton" className="Btn Btn_emph Btn_super" type="submit" value="Continue"/>
-                        </li>
-                        <li className="Row horizontalSpace"></li>
-                        <li className="checkbox-container SwitchInput Row CanBePulledDown PulledIntoView" id="rememberMeRow" tableindex="-1">
-                            <input name="rememberMe" id="rememberMe" type="checkbox" className="checkbox" value="true"/>
-                            <label htmlFor="rememberMe"> Remember me for 30 days</label>
+                        
+                        <li className="tos-container">
+                            <label className="t-pico tos">
+                                By creating an account, you agree to our
+                                <br/><a href="#">Terms of Surrender </a>
+                                 and
+                                <a href="#"> Privates Policy</a>
+                                .
+                            </label>
                         </li>
 
                     </ol>
-                        
-                       
-                            
-                        
-                
-                        
-                          
-                            
-                        
-                           
-                      
-                    </form>
-                </div>
-        
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+
         );
     }
 }
 
-export default MinimalLoginForm;
+export default MinimalRegistrationForm;

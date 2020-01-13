@@ -1,14 +1,13 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
-import SessionForm from './MinimalLoginForm';
+import Login from './Login';
+import MinimalLoginForm from './MinimalLoginForm';
 
 const mapStateToProps = ({ errors }) => {
     return {
-        errors: errors.session,
-        formType: 'login',
-        navLink: <Link to="/signup">sign up instead</Link>,
+        errors: errors.session
+      
     };
 };
 
@@ -18,4 +17,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);
+export default connect(mapStateToProps, mapDispatchToProps)(MinimalLoginForm);

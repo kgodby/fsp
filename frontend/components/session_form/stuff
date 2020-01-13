@@ -1,0 +1,11 @@
+
+
+//username field
+                               
+//password field
+                            <label className='password'>
+                               
+                            </label>
+//submit button
+                             <input className="session-submit" type="submit" value={this.props.formType} />
+

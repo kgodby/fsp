@@ -1,5 +1,5 @@
 import React from 'react'
-import MinimalLoginForm from './MinimalLoginForm'
+import LoginFormContainer from './login_form_container'
 import {Link} from 'react-router-dom'
 
 class Login extends React.Component{
@@ -23,7 +23,7 @@ class Login extends React.Component{
                                         </div>
                                         <p className="tagline">Remember everything important.</p>
                                     </div>
-                                    <MinimalLoginForm className="MinimalLoginForm"/>
+                                    <LoginFormContainer className="MinimalLoginForm"/>
                                     <div id="context-switch">
                                         <div className="t-pico context-switch-explanation">
                                                             Don't have an account?

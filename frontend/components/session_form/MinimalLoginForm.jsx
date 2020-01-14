@@ -8,6 +8,7 @@ class MinimalLoginForm extends React.Component {
             email: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoSignIn = this.demoSignIn.bind(this)
     }
 
     update(field) {
@@ -34,6 +35,14 @@ class MinimalLoginForm extends React.Component {
         );
     }
 
+  
+    demoSignIn(){
+        
+        // this.setState({email:"demo@evernote.com", password:"go_slappy_go"}
+        // .then( e => this.handleSubmit(e))
+        this.props.processForm({ email: "demo@evernote.com", password: "go_slappy_go" });
+        
+    }
 
 
 
@@ -47,7 +56,7 @@ class MinimalLoginForm extends React.Component {
                         
                     <ol>
                         <li className="Row">
-                            <div id="demo-signup" className="demo-button">
+                            <div type="" id="demo-signup" className="demo-button" onClick={this.demoSignIn}>
                                 <div className="demo-signup-inner">
                                     <div className="demo-text">
                                         Continue as Demo User</div>
@@ -66,7 +75,7 @@ class MinimalLoginForm extends React.Component {
                                 <input type="text"
                                     name="username"
                                     id="username"
-                                    placeholder="Email address or username"
+                                    placeholder="Email address"
                                     value={this.state.username}
                                     onChange={this.update('email')}
                                     className="TextInput TextInput_large"
@@ -74,7 +83,7 @@ class MinimalLoginForm extends React.Component {
 
                             </div>
                         </li>
-                        <li className="Row CanBePulledDown PulledIntoViewWithoutDelay" id="passwordRow" tableindex="-1">
+                        <li className="Row CanBePulledDown" id="passwordRow" tableindex="-1">
                             <div id="password-wrapper">
                                 <input type="password"
                                     value={this.state.password}

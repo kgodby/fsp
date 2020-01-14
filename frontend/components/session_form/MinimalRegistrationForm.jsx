@@ -64,9 +64,9 @@ class MinimalRegistrationForm extends React.Component {
                         <li className="Row">
                             <div id="email-wrapper">
                                 <input type="text"
-                                    name="username"
-                                    id="username"
-                                    placeholder="Email address or username"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Email address"
                                     value={this.state.username}
                                     onChange={this.update('email')}
                                     className="TextInput TextInput_large"

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Root from './components/root'
 import configureStore from './store/store'
 import * as SessionAction from './actions/session_actions' 
-
+import {createNote} from './util/note_api_util'
 
 document.addEventListener("DOMContentLoaded", () => {   
   
@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore()
     }
 
+    window.createNote = createNote
     window.dispatch = store.dispatch;
     window.getState = store.getState;
     window.login = SessionAction.login
     window.logout = SessionAction.logout
-  
+
    
     
     ReactDOM.render(

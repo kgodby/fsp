@@ -1046,6 +1046,29 @@ hr {
 }
 
 .editor{
+   display: flex;
+   flex-direction: column;
     width: 100%;
+   
+}
+#account-modal-inner{
+    
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+    padding: 12px 0;
+    text-align: left;
+    border-radius: 3px;
+    color:  #333;
+    font-size: 14px;
+
+}
+
+#account-modal-inner > ul{
+    list-style: none;
+}
+
+#account-modal-inner > h2{
+   color: #a6a6a6;
 }
 

@@ -1,0 +1,1 @@
+json.extract! note, :title, :body, :notebook_id, :trash
